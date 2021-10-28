@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>스토리 타임 로그인 하기</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta name="description" content="로그인">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:title" content="스토리 타임">
+        <meta property="og:type" content="로그인">
+        <meta property="og:image" content="/storytime/image/logo.png">
+
+        <link rel="stylesheet" href="/storytime/css/auth.css">
+        <link rel="shortcut icon" href="/storytime/image/logo.png" type="image/x-icon">
+
+        <script src="/storytime/scripts/Utils.js"></script>
+    </head>
+    <body>
+        <h1 class="header-h1">
+            <a href="/storytime/index.html">스토리 타임</a>
+        </h1>
+        <input type="id" name="id" id="id">
+        <br>
+        <br>
+        <input type="password" name="password" id="password">
+        <br>
+        <div class="option.base">
+            <p class="option">
+                <a id="popup" onclick="return popup();">아이디 찾기</a> | <a id="popup" href="">비밀번호 찾기</a> | <a id="popup" href="">회원가입</a>
+            </p>
+            <script src="/storytime/scripts/Utils.js"></script>
+        </div>
+        <div class="signin-button">
+            <a href="http://" id="signin-btn"></a>
+        </div>
+        <ul>
+            <li><a href=""><img src="/storytime/image/google.png" alt="google.png" id="google"></a></li>
+            <li><a href=""><img src="/storytime/image/kakao.png" alt="kakao.png" id="kakao"></a></li>
+            <li><a href=""><img src="/storytime/image/naver.png" alt="naver.png" id="naver"></a></li>
+        </ul>
+    </body>
+</html>

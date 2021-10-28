@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>스토리 타임 이용약관</title>
+        <meta name="description" content="스토리타임 이용약관">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/storytime/css/terms.css">
+        <link rel="shortcut icon" href="/storytime/image/logo.png" type="image/x-icon">
+        
+        <script>
+            $("terms-first").click(function() {
+                var checked = $("terms-first").is(":checked");
+                $("terms-first").prop("terms-first", !checked);
+            });
+
+            $("terms-second").click(function() {
+                var checked = $("terms-second").is(":checked");
+                $("terms-second").prop("terms-second", !checked);
+            });
+
+            $("allCheck").click(function () {
+                var checked = $("allCheck").is(":checked");
+
+                if(checked) {
+                    $("input:checkbox").prop("checked", true);
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>StoryTime 이용약관</h1>
+        </header>
+        <div class="terms-middle">
+            <ul>
+                <p></p>
+                <li>d</li>
+                <input type="checkbox" name="" id="terms-first">
+            </ul>
+            <ul>
+                <p></p>
+                <li></li>
+                <input type="checkbox" name="" id="terms-second">
+            </ul>
+            <input type="checkbox" name="" id="">
+            <div class="terms-information">
+                <h4 class="information-title"></h4>
+                <p></p>
+            </div>
+            <input type="checkbox" id="allCheck">
+        </div>
+        <div class="terms-buttons">
+        <button id="next-signup">진행하기</button>
+        <button id="back-index">돌아가기</button>
+        </div>
+    </body>
+</html>
